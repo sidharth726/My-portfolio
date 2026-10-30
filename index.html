@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Sidharth Saini, web developer.">
+  <title>Sidharth Saini | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">SS<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme">☀ Light mode</button>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">WEB DEVELOPER · STUDENT</p>
+      <h1>Hi, I’m <span>Sidharth Saini.</span></h1>
+      <p class="intro">I build clean, useful web experiences with HTML, CSS, and JavaScript.</p>
+      <div class="actions"><a class="button primary" href="#projects">View my work</a><a class="button secondary" href="https://github.com/sidharth726" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+      <div class="hero-note"><span class="status-dot"></span> Open to learning and building</div>
+    </section>
+    <section class="section" id="about">
+      <p class="eyebrow">01 / ABOUT</p><h2>A little about me</h2>
+      <p class="body-copy">I’m Sidharth, a second-year B.Tech CSE student in Section K at JECRC University. I’m learning web development with HTML, CSS, and JavaScript, and building my skills through hands-on projects.</p>
+    </section>
+    <section class="section" id="skills">
+      <p class="eyebrow">02 / SKILLS</p><h2>Tools I use</h2>
+      <div class="skill-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span></div>
+    </section>
+    <section class="section" id="projects">
+      <p class="eyebrow">03 / SELECTED WORK</p><h2>Projects</h2>
+      <p class="hint">These are the projects currently available on my GitHub profile.</p>
+      <label class="sr-only" for="project-search">Search projects</label>
+      <input class="project-search" id="project-search" type="search" placeholder="Search by project or technology…">
+      <p class="hint" id="project-count" aria-live="polite"></p>
+      <div class="project-grid" id="project-grid"></div>
+    </section>
+    <section class="section chat-section" id="chat">
+      <p class="eyebrow">04 / ASK MY PORTFOLIO</p><h2>Portfolio assistant</h2>
+      <p class="body-copy">Ask a question about my skills or projects.</p>
+      <div class="chat-box" aria-live="polite" id="chat-messages"><p class="bot-message">Hi! I’m Sidharth’s portfolio assistant. The API connection will be added after the class method is confirmed.</p></div>
+      <form id="chat-form"><label class="sr-only" for="chat-input">Your question</label><input id="chat-input" placeholder="Type a question…" autocomplete="off"><button class="button primary" type="submit">Send</button></form>
+      <p class="hint">This starter has no API key or live chatbot connection yet.</p>
+    </section>
+    <section class="section" id="contact">
+      <p class="eyebrow">05 / CONTACT</p><h2>Let’s connect</h2>
+      <p class="body-copy">Reach out by email or find me on GitHub.</p>
+      <div class="actions"><a class="button primary" id="email-link" href="mailto:siddharthsaini51360@gmail.com">Email me</a><a class="button secondary" href="https://github.com/sidharth726" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+    </section>
+  </main>
+  <footer>© <span id="year"></span> Sidharth Saini · Built with HTML, CSS & JavaScript</footer>
+  <script src="script.js"></script>
+</body>
+</html>
